@@ -1,17 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ParentComponent></ParentComponent>
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <FormComponent></FormComponent>
+  <br />
+  <br />
+  <br />
+  <br />
+  <ListComponent></ListComponent>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ParentComponent from "./components/component-communication/ParentComponent.vue";
+import ListComponent from "./components/component-communication/ListComponent.vue";
+import FormComponent from "./components/component-communication/FormComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ParentComponent,
+    ListComponent,
+    FormComponent,
+  },
+};
 </script>
 
 <style>
